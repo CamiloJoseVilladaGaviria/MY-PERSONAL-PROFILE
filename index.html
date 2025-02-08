@@ -11,6 +11,8 @@
     <style>
         #Body {
             background-color: peru;
+            max-width: max-content;
+            min-width: min-content;
         }
 
         @keyframes movement {
@@ -159,6 +161,350 @@
         #END {
             font-size: 100px;
         }
+
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            #Body {
+                background-color: black;
+                max-width: max-content;
+                min-width: min-content;
+            }
+
+            @keyframes movement {
+                0% {
+                    transform: translateX(0);
+                }
+
+                25% {
+                    transform: translateX(100px);
+                    color: blueviolet;
+                }
+
+                50% {
+                    transform: translateX(-100px);
+                    color: blue;
+                }
+
+                75% {
+                    transform: translateY(100px);
+                    color: whitesmoke;
+                }
+
+                100% {
+                    transform: translateY(0);
+                    color: aqua;
+                }
+            }
+
+            .Main-Title {
+                color: black;
+                animation: movement 2s ease-in-out infinite;
+            }
+
+            #Header {
+                background-color: whitesmoke;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            #Nav {
+                background-color: black;
+                font-family: 'Times New Roman', Times, serif;
+                color: whitesmoke;
+            }
+
+            #Burguer-Menu {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            #Burguer-Menu:hover {
+                color: whitesmoke;
+                font-size: 100px;
+            }
+
+
+            ul {
+                visibility: hidden;
+                text-align: center;
+                list-style-type: none;
+                font-family: 'Times New Roman', Times, serif;
+                color: black;
+                margin-top: 10px;
+                border: 2px solid black;
+                padding: 10px;
+                background-color: whitesmoke;
+                border-radius: 8px;
+            }
+
+            #Burguer-Menu:hover+ul {
+                visibility: visible;
+            }
+
+            #First-Article {
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            img {
+                width: 500px;
+            }
+
+            section {
+                background-color: whitesmoke;
+                border-radius: 20%;
+                border-style: dashed;
+                border-width: 20px;
+            }
+
+            @keyframes person {
+                0% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(100px);
+                }
+
+            }
+
+            #Person-Image {
+                animation: person 2s ease-in-out infinite;
+            }
+
+            p {
+                font-family: 'Times New Roman', Times, serif;
+                background-color: whitesmoke;
+                border: 2px solid black;
+            }
+
+            H1 {
+                color: whitesmoke;
+            }
+
+            #Second-Article {
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            @keyframes ball {
+                0% {
+                    transform: translateX(0);
+                }
+
+                50% {
+                    transform: translateX(100px);
+                }
+            }
+
+            #Ball-Image {
+                animation: ball 2s ease-in-out infinite;
+            }
+
+            #Footer-Title {
+                font-family: 'Times New Roman', Times, serif;
+                color: black;
+            }
+
+            a:hover {
+                cursor: pointer;
+                font-size: 100px;
+            }
+
+            footer {
+                background-color: whitesmoke;
+            }
+
+            #Third-Article {
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            #END {
+                font-size: 100px;
+            }
+
+        }
+
+        @media screen and (max-width: 767px) {
+            #Body {
+                background-color: lightblue;
+                max-width: max-content;
+                min-width: min-content;
+            }
+
+            @keyframes movement {
+                0% {
+                    transform: translateX(0);
+                }
+
+                25% {
+                    transform: translateX(100px);
+                    color: blueviolet;
+                }
+
+                50% {
+                    transform: translateX(-100px);
+                    color: blue;
+                }
+
+                75% {
+                    transform: translateY(100px);
+                    color: whitesmoke;
+                }
+
+                100% {
+                    transform: translateY(0);
+                    color: aqua;
+                }
+            }
+
+            .Main-Title {
+                color: black;
+                animation: movement 2s ease-in-out infinite;
+            }
+
+            #Header {
+                background-color: whitesmoke;
+                font-family: 'Times New Roman', Times, serif;
+                width: 120%;
+            }
+
+            #Nav {
+                background-color: black;
+                font-family: 'Times New Roman', Times, serif;
+                color: whitesmoke;
+                width: 120%;
+            }
+
+            #Burguer-Menu {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            #Burguer-Menu:hover {
+                color: whitesmoke;
+                font-size: 100px;
+            }
+
+
+            ul {
+                visibility: hidden;
+                text-align: center;
+                list-style-type: none;
+                font-family: 'Times New Roman', Times, serif;
+                color: black;
+                margin-top: 10px;
+                border: 2px solid black;
+                padding: 10px;
+                background-color: whitesmoke;
+                border-radius: 8px;
+            }
+
+            #Burguer-Menu:hover+ul {
+                visibility: visible;
+            }
+
+            .fa-male:before,
+            .fa-person:before {
+                content: "\f183";
+                visibility: hidden;
+            }
+
+            #First-Article {
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            img {
+                width: 500px;
+            }
+
+            section {
+                background-color: whitesmoke;
+                border-radius: 20%;
+                border-style: dashed;
+                border-width: 20px;
+            }
+
+            @keyframes person {
+                0% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(100px);
+                }
+
+            }
+
+            #Person-Image {
+                animation: person 2s ease-in-out infinite;
+            }
+
+            p {
+                font-family: 'Times New Roman', Times, serif;
+                background-color: whitesmoke;
+                border: 2px solid black;
+            }
+
+            H1 {
+                color: whitesmoke;
+            }
+
+            .fa-plane:before {
+                content: "\f072";
+                visibility: hidden;
+            }
+
+            #Second-Article {
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            @keyframes ball {
+                0% {
+                    transform: translateX(0);
+                }
+
+                50% {
+                    transform: translateX(100px);
+                }
+            }
+
+            #Ball-Image {
+                animation: ball 2s ease-in-out infinite;
+            }
+
+            #Footer-Title {
+                font-family: 'Times New Roman', Times, serif;
+                color: black;
+            }
+
+            a:hover {
+                cursor: pointer;
+                font-size: 100px;
+            }
+
+            footer {
+                background-color: whitesmoke;
+            }
+
+            .fa-star:before {
+                content: "\f005";
+                visibility: hidden;
+            }
+
+            #Third-Article {
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            .PET {
+                visibility: hidden;
+            }
+
+            #END {
+                font-size: 100px;
+            }
+        }
     </style>
 </head>
 
@@ -236,7 +582,7 @@
         <h1>HI!</h1>
         <section>
             <i id="Person-Image" class="fa-solid fa-person"></i>
-            <img src="../MY-PROFILE-main/IMG/e2a3073e-8632-4787-b70c-24f763e7a64c.jpg" alt="PROFILE IMG">
+            <img src="../MY-PERSONAL-PROFILE-main/IMG/e2a3073e-8632-4787-b70c-24f763e7a64c.jpg" alt="PROFILE IMG">
             <i id="Person-Image" class="fa-solid fa-person"></i>
         </section>
         <br>
@@ -332,7 +678,8 @@
     <article id="Third-Article" class="text-center fs-1">
         <h1>KNOWLEDGES</h1>
         <section>
-            <img src="../MY-PERSONAL-PROFILE-main/IMG/desktop_bb4838d3-61b2-4507-b9d0-fff8b5dbea3c.jpg" alt="ILUSTRATIVE IMG">
+            <img src="../MY-PERSONAL-PROFILE-main/IMG/desktop_bb4838d3-61b2-4507-b9d0-fff8b5dbea3c.jpg"
+                alt="ILUSTRATIVE IMG">
         </section>
         <br>
         <br>
@@ -344,7 +691,9 @@
     <br>
     <br>
     <br>
-    🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
+    <div class="PET">
+        🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
+    </div>
     <br>
     <br>
     <br>
