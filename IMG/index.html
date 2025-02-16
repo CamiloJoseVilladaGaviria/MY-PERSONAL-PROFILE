@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="utils.js"></script>
     <style>
         #Body {
             background-color: peru;
@@ -65,12 +66,12 @@
         }
 
         #Burguer-Menu:hover {
-            color: black;
+            color: darkblue;
             font-size: 100px;
         }
 
         ul {
-            visibility: hidden;
+            visibility: visible;
             text-align: center;
             list-style-type: none;
             font-family: 'Times New Roman', Times, serif;
@@ -84,7 +85,29 @@
 
         #Burguer-Menu:hover+ul {
             visibility: visible;
+            color: darkblue;
         }
+
+        #AfterFace::after {
+            visibility: hidden;
+            content: "😎";
+            transition: visibility 0.5s ease;
+        }
+
+        #BeforeFace::before {
+            visibility: visible;
+            content: "😁";
+            transition: visibility 0.5s ease;
+        }
+
+        #AfterFace.show::after {
+            visibility: visible;
+        }
+
+        #BeforeFace.hide::before {
+            visibility: hidden;
+        }
+
 
         #First-Article {
             font-family: 'Times New Roman', Times, serif;
@@ -226,12 +249,12 @@
             }
 
             #Burguer-Menu:hover {
-                color: whitesmoke;
+                color: darkblue;
                 font-size: 70px;
             }
 
             ul {
-                visibility: hidden;
+                visibility: visible;
                 text-align: center;
                 list-style-type: none;
                 font-family: 'Times New Roman', Times, serif;
@@ -245,6 +268,27 @@
 
             #Burguer-Menu:hover+ul {
                 visibility: visible;
+                color: darkblue;
+            }
+
+            #AfterFace::after {
+                visibility: hidden;
+                content: "😎";
+                transition: visibility 0.5s ease;
+            }
+
+            #BeforeFace::before {
+                visibility: visible;
+                content: "😁";
+                transition: visibility 0.5s ease;
+            }
+
+            #AfterFace.show::after {
+                visibility: visible;
+            }
+
+            #BeforeFace.hide::before {
+                visibility: hidden;
             }
 
             #First-Article {
@@ -407,12 +451,12 @@
             }
 
             #Burguer-Menu:hover {
-                color: whitesmoke;
+                color: darkblue;
                 font-size: 40px;
             }
 
             ul {
-                visibility: hidden;
+                visibility: visible;
                 text-align: center;
                 list-style-type: none;
                 font-family: 'Times New Roman', Times, serif;
@@ -426,6 +470,27 @@
 
             #Burguer-Menu:hover+ul {
                 visibility: visible;
+                color: darkblue;
+            }
+
+            #AfterFace::after {
+                visibility: hidden;
+                content: "😎";
+                transition: visibility 0.5s ease;
+            }
+
+            #BeforeFace::before {
+                visibility: visible;
+                content: "😁";
+                transition: visibility 0.5s ease;
+            }
+
+            #AfterFace.show::after {
+                visibility: visible;
+            }
+
+            #BeforeFace.hide::before {
+                visibility: hidden;
             }
 
             .fa-male:before,
@@ -545,11 +610,14 @@
         <div class="text-center fs-3">MENU</div>
         <i id="Burguer-Menu" class="fa-solid fa-bars"></i>
         <ul>
-            <li class="fs-1">WELCOME TO MENU 😎</li>
-            <li class="fs-3">🌑 GO TO INTRODUCTION</li>
-            <li class="fs-3">🌒 GO TO PERSONAL HOBBIES</li>
-            <li class="fs-3">🌓 GO TO KNOWLEDGES</li>
-            <li class="fs-3">🌔 GO TO CHANNELS</li>
+            <li class="fs-1">WELCOME TO MENU</li>
+            <div id="AfterFace" class="fs-1"></div>
+            <div id="BeforeFace" class="fs-1"></div>
+            <li class="fs-3"><a href="#First-Article">GO TO INTRODUCTION</a></li>
+            <li class="fs-3"><a href="#Second-Article">GO TO PERSONAL HOBBIES</a></li>
+            <li class="fs-3"><a href="#Third-Article">GO TO KNOWLEDGES</a>
+            </li>
+            <li class="fs-3"><a href="#Footer-Title">GO TO CHANNELS</a></li>
         </ul>
     </nav>
     <br>
@@ -608,10 +676,12 @@
     <br>
     <br>
     <article id="First-Article" class="text-center fs-1">
+        <a href="#Burguer-Menu">Go Up</a>
         <h1>HI!</h1>
         <section>
             <i id="Person-Image" class="fa-solid fa-person"></i>
-            <img src="../IMG/e2a3073e-8632-4787-b70c-24f763e7a64c.jpg" alt="PROFILE IMG">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS4CMt7GkgTSpDIh0UskLC_BXFJvreVnhkMNoh4JT503OWVyN5FDOovDdu5h-2cnjy-DulkRgV3s8mtUJ82KVFsRH6XroqBKk4IyiIM_FPqfrGtKJTn7IYsDg0Pz7qPtLgQ040WsHCfnS6SZuJurG78J8hW0s7dnKBM9RLA3Q1Zt2Gex9UsN_GdbcboFQ/s320/e2a3073e-8632-4787-b70c-24f763e7a64c.jpg"
+                alt="PROFILE IMG">
             <i id="Person-Image" class="fa-solid fa-person"></i>
         </section>
         <br>
@@ -657,10 +727,12 @@
     <br>
     <br>
     <article id="Second-Article" class="text-center fs-1">
+        <a href="#Burguer-Menu">Go Up</a>
         <h1>PERSONAL HOBBIES</h1>
         <section>
             <div id="Ball-Image">⚽</div>
-            <img src="../IMG/cd74e4d6-ba93-44df-9f3e-77b5df2adb17.jpg" alt="HOBBIE IMG">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8h9QWKTN3qhAnV3f6E77cBd4gZf1E5v5luA_mFIX3AJZIBPd5fvxnaDi9FBdfJoQMtkfUew5AmXfkx-G7IY7W5QxM3ieSULvVDMgmyA57gPcNApIM4xE-Qfn8yuW4-hbBCtbdXDIuPL8eTOe4lpgqtdtUNTeCqZqk8yA0PSKi4gF-3jm6R8w3GHyrrls/s320/cd74e4d6-ba93-44df-9f3e-77b5df2adb17.jpg"
+                alt="HOBBIE IMG">
             <div id="Ball-Image">⚽</div>
         </section>
         <br>
@@ -705,9 +777,11 @@
     <br>
     <br>
     <article id="Third-Article" class="text-center fs-1">
+        <a href="#Burguer-Menu">Go Up</a>
         <h1>KNOWLEDGES</h1>
         <section>
-            <img src="../IMG/desktop_bb4838d3-61b2-4507-b9d0-fff8b5dbea3c.jpg" alt="ILUSTRATIVE IMG">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBNOlIN1_ZATNn89MWFipTAsjAnXstP6zZig-yN58prc8qRDaFvAENl7Xegzl6uwk47IYEiiP9AfghJV_RG2I81YOli9D-Wmvmi74E3yUlFA8-aZDeLQoaiATWFcq-QVAcQdycB-Qvj-nMIS17BkLoxShoYAUYGY1dzz9vVIUiGUqqocYIEbOKXPzwyo4/s320/desktop_bb4838d3-61b2-4507-b9d0-fff8b5dbea3c.jpg"
+                alt="ILUSTRATIVE IMG">
         </section>
         <br>
         <br>
@@ -729,6 +803,7 @@
     <br>
 
     <footer class="text-center">
+        <a href="#Burguer-Menu">Go Up</a>
         <h1 id="Footer-Title" class="text-center">MY CHANNELS</h1>
         <a href="https://github.com/CamiloJoseVilladaGaviria" alt="GITHUB CHANNEL"> <i
                 class="fa-brands fa-github"></i></a>
