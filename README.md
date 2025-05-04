@@ -7,12 +7,12 @@
 | 📁 Repositorio | 📄 Descripción |
 |---------------|----------------|
 | [Cuenta-Bancaria](https://github.com/CamiloJoseVilladaGaviria/Cuenta-Bancaria) | Simulación básica de una cuenta bancaria con operaciones como retiro, depósito y consulta de saldo. |
-| [Gym-Project](https://github.com/CamiloJoseVilladaGaviria/Gym-Project) | Proyecto para gestión de rutinas de entrenamiento, usuarios y progreso en un gimnasio. |
+| [Gym-Project](https://github.com/CamiloJoseVilladaGaviria/Gym-Project) | Proyecto para gestión en un gimnasio. |
 | [Mision-Game](https://github.com/CamiloJoseVilladaGaviria/Mision-Game) | Juego sencillo con misiones programado en consola, ideal para practicar lógica y estructuras de control. |
 | [MY-PERSONAL-PROFILE](https://github.com/CamiloJoseVilladaGaviria/MY-PERSONAL-PROFILE) | Repositorio que contiene mi perfil personal y presentación como desarrollador. |
 | [Numeros-Fibonacci](https://github.com/CamiloJoseVilladaGaviria/Numeros-Fibonacci) | Algoritmo que genera secuencias de números Fibonacci, útil para practicar recursividad. |
 | [Proyecto-POO](https://github.com/CamiloJoseVilladaGaviria/Proyecto-POO) | Proyecto orientado a objetos que ejemplifica principios de OOP como herencia, polimorfismo y encapsulamiento. |
-| [Software-Projects](https://github.com/CamiloJoseVilladaGaviria/Software-Projects) | Repositorio general con distintos proyectos de software desarrollados para prácticas o ejercicios. |
+| [Software-Projects](https://github.com/CamiloJoseVilladaGaviria/Software-Projects) | Repositorio de prácticas o ejercicios. |
 
 ---
 
